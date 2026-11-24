@@ -1,4 +1,4 @@
-Title : CINE-VAULT
+Title : EDUPULSE
 Name : KOMMURI KARTHIKEYA
 Branch : CSE 
 Section : 3
