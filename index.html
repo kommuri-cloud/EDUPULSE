@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduPulse | College Student Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard-layout">
+    <!-- Sidebar Profile & Navigation -->
+    <aside class="sidebar">
+      <div class="brand">Edu<span>Pulse</span></div>
+      <div class="profile-box">
+        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=200&q=80" alt="Student Avatar" />
+        <h3>Rohan Karthik</h3>
+        <p>B.Tech CSE • Semester 1</p>
+        <span class="roll-badge">ID: 26CS1042</span>
+      </div>
+      <nav class="side-nav">
+        <a href="#overview" class="active">Dashboard Overview</a>
+        <a href="#attendance">Attendance</a>
+        <a href="#marks">Internal Marks</a>
+        <a href="#timetable">Timetable</a>
+        <a href="#announcements">Announcements</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h1>Welcome back, Rohan</h1>
+          <p class="subtitle">Academic Year 2026–2027 • Fall Semester</p>
+        </div>
+        <div class="notif-pill">🔔 3 New Notifications</div>
+      </header>
+
+      <!-- Top KPI Summary Cards -->
+      <section id="overview" class="kpi-grid">
+        <div class="card kpi">
+          <span>Overall Attendance</span>
+          <h2>88.5%</h2>
+          <small class="good">Above 75% requirement</small>
+        </div>
+        <div class="card kpi">
+          <span>Current CGPA</span>
+          <h2>9.14</h2>
+          <small class="good">Top 10% of batch</small>
+        </div>
+        <div class="card kpi">
+          <span>Enrolled Subjects</span>
+          <h2>5 Courses</h2>
+          <small>22 Total Credits</small>
+        </div>
+        <div class="card kpi">
+          <span>Pending Activities</span>
+          <h2>3 Projects</h2>
+          <small class="warn">Due: Nov 24 EOD</small>
+        </div>
+      </section>
+
+      <!-- Attendance & Marks Grid -->
+      <section id="attendance" class="two-col">
+        <div class="card">
+          <h3>Subject-Wise Attendance</h3>
+          <div class="progress-item">
+            <div class="progress-label"><span>Web Development</span><strong>92%</strong></div>
+            <div class="bar"><div class="fill" style="width: 92%"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>Data Structures & C</span><strong>88%</strong></div>
+            <div class="bar"><div class="fill" style="width: 88%"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>Engineering Mathematics</span><strong>84%</strong></div>
+            <div class="bar"><div class="fill" style="width: 84%"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-label"><span>Digital Logic Design</span><strong>90%</strong></div>
+            <div class="bar"><div class="fill" style="width: 90%"></div></div>
+          </div>
+        </div>
+
+        <div id="marks" class="card">
+          <h3>Mid-Term Marks & Subjects</h3>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Subject</th>
+                <th>Mid-1 (30)</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CS101</td>
+                <td>Web Development</td>
+                <td>29</td>
+                <td><span class="grade">O</span></td>
+              </tr>
+              <tr>
+                <td>CS102</td>
+                <td>Programming in C</td>
+                <td>27</td>
+                <td><span class="grade">A+</span></td>
+              </tr>
+              <tr>
+                <td>MA101</td>
+                <td>Linear Algebra</td>
+                <td>26</td>
+                <td><span class="grade">A+</span></td>
+              </tr>
+              <tr>
+                <td>EC104</td>
+                <td>Digital Logic</td>
+                <td>25</td>
+                <td><span class="grade">A</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Timetable & Announcements -->
+      <section id="timetable" class="two-col">
+        <div class="card">
+          <h3>Today's Class Timetable</h3>
+          <ul class="schedule-list">
+            <li>
+              <span class="time">09:30 AM</span>
+              <div><strong>Web Development Lab</strong><small>Lab Block B • Prof. S. Rao</small></div>
+            </li>
+            <li>
+              <span class="time">11:30 AM</span>
+              <div><strong>Engineering Mathematics</strong><small>Room 304 • Dr. K. Devi</small></div>
+            </li>
+            <li>
+              <span class="time">02:00 PM</span>
+              <div><strong>Digital Logic Design</strong><small>Room 201 • Prof. M. Reddy</small></div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="announcements" class="card">
+          <h3>Notifications & Announcements</h3>
+          <div class="notice">
+            <span class="tag-urgent">Deadline</span>
+            <h4>Web Development Activity Submission</h4>
+            <p>Upload all 3 HTML/CSS projects to GitHub and submit deployed links before Nov 24 EOD.</p>
+          </div>
+          <div class="notice">
+            <span class="tag-info">Campus</span>
+            <h4>Annual Tech Fest Registrations Open</h4>
+            <p>Student hackathon and coding event registrations close this Friday at 5:00 PM.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
